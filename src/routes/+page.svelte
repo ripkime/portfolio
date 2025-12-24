@@ -83,4 +83,138 @@
 			<div class="mt-8 h-px w-full bg-gray-200 dark:bg-gray-800"></div>
 		</div>
 	</section>
+
+	<!-- project -->
+	<section class="px-4 pt-32 pb-20" id="projects">
+		<div class="container mx-auto max-w-4xl">
+			<div
+				class="mb-16 flex items-center space-x-7 justify-between border-b border-gray-200 pb-6 dark:border-gray-800"
+			>
+				<div>
+					<h2 class="font-heading text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Latest Work</h2>
+					<p class="mt-2 text-sm font-light text-gray-500 dark:text-gray-400">
+						A selection of projects I've built with my favourite stack.
+					</p>
+				</div>
+
+				<a
+					href="/projects"
+					class="group flex items-center gap-2 text-sm font-medium text-gray-900 transition hover:text-black dark:text-white dark:hover:text-gray-300"
+				>
+					View All
+					<svg
+						class="h-4 w-4 transition-transform group-hover:translate-x-1"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg
+					>
+				</a>
+			</div>
+
+			<div class="grid gap-x-12 gap-y-16 sm:grid-cols-2">
+				<article class="group cursor-pointer">
+					<div
+						class="relative mb-6 overflow-hidden rounded-2xl bg-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl dark:bg-zinc-800"
+					>
+						<div
+							class="absolute inset-0 z-10 bg-black/0 transition-colors duration-500 group-hover:bg-black/5"
+						></div>
+
+						<img
+							src="/assets/images/piggy-tracker-screenshot.png"
+							alt="Piggy Tracker App screenshot"
+							class="aspect-4/3 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+						/>
+					</div>
+
+					<div class="flex flex-col gap-3">
+						<div class="flex items-center justify-between">
+							<h3 class="font-heading text-2xl font-bold text-gray-900 dark:text-white">
+								<a href="#s" class="relative">
+									Piggy Tracker
+									<span
+										class="absolute -bottom-1 left-0 h-0.5 w-0 bg-gray-900 transition-all duration-300 group-hover:w-full dark:bg-white"
+									></span>
+								</a>
+							</h3>
+							<svg
+								class="h-5 w-5 text-gray-400 transition-colors group-hover:text-gray-900 dark:group-hover:text-white"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"><path d="M7 17L17 7M7 7h10v10" /></svg
+							>
+						</div>
+
+						<p class="text-base leading-relaxed font-light text-gray-600 dark:text-gray-400">
+							Money tracking app powered by Laravel. Keep track of income and expense, with category emoji.
+						</p>
+
+						<div
+							class="mt-2 flex items-center gap-3 text-sm font-medium text-gray-500 dark:text-gray-500"
+						>
+							<span>Laravel</span>
+							<span class="h-1 w-1 rounded-full bg-gray-300 dark:bg-zinc-700"></span>
+							<span>Flutter</span>
+							<span class="h-1 w-1 rounded-full bg-gray-300 dark:bg-zinc-700"></span>
+							<span>React</span>
+							<span class="h-1 w-1 rounded-full bg-gray-300 dark:bg-zinc-700"></span>
+							<span>MySQL</span>
+						</div>
+					</div>
+				</article>
+
+				<article class="group cursor-pointer">
+					<div
+						class="relative mb-6 overflow-hidden rounded-2xl bg-gray-100 shadow-sm transition-all duration-500 group-hover:shadow-xl dark:bg-zinc-800"
+					>
+						<div
+							class="absolute inset-0 z-10 bg-black/0 transition-colors duration-500 group-hover:bg-black/5"
+						></div>
+
+						<img
+							src="/assets/images/ripki-me-screenshot.png"
+							alt="Ripki.me Screenshot"
+							class="aspect-4/3 w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+						/>
+					</div>
+
+					<div class="flex flex-col gap-3">
+						<div class="flex items-center justify-between">
+							<h3 class="font-heading text-2xl font-bold text-gray-900 dark:text-white">
+								<a href="#s" class="relative">
+									ripki.me
+									<span
+										class="absolute -bottom-1 left-0 h-0.5 w-0 bg-gray-900 transition-all duration-300 group-hover:w-full dark:bg-white"
+									></span>
+								</a>
+							</h3>
+							<svg
+								class="h-5 w-5 text-gray-400 transition-colors group-hover:text-gray-900 dark:group-hover:text-white"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"><path d="M7 17L17 7M7 7h10v10" /></svg
+							>
+						</div>
+
+						<p class="text-base leading-relaxed font-light text-gray-600 dark:text-gray-400">
+							A modern personal website built for performance. 100/100 Lighthouse score.
+						</p>
+
+						<div
+							class="mt-2 flex items-center gap-3 text-sm font-medium text-gray-500 dark:text-gray-500"
+						>
+							<span>Svelte</span>
+							<span class="h-1 w-1 rounded-full bg-gray-300 dark:bg-zinc-700"></span>
+							<span>Tailwind</span>
+							<span class="h-1 w-1 rounded-full bg-gray-300 dark:bg-zinc-700"></span>
+							<span>Vercel</span>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
 </div>
