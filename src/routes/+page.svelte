@@ -6,7 +6,7 @@
 	import Youtube from '$lib/components/icons/youtube.svelte';
 	import Hero from '$lib/components/landing/hero.svelte';
 	import Project from '$lib/components/landing/project.svelte';
-	import { tech_stack } from '$lib/constants';
+	import TechStack from '$lib/components/landing/tech_stack.svelte';
 </script>
 
 <div class="container mx-auto max-w-4xl px-4 md:mt-20">
@@ -17,64 +17,7 @@
 	<Project />
 
 	<!-- tech stack -->
-	<section class="px-4 pt-32">
-		<div class="container mx-auto max-w-4xl">
-			<div class="mb-12">
-				<h2 class="font-heading text-3xl font-bold text-gray-900 dark:text-white">The Arsenal</h2>
-				<p
-					class="mt-4 max-w-xl text-lg leading-relaxed font-light text-gray-500 dark:text-gray-400"
-				>
-					The technology stack I use to build scalable backends and fluid user interfaces.
-				</p>
-			</div>
-
-			<div class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
-				{#each tech_stack[0].mainStack as item}
-					{@const Icon = item.icon}
-
-					<div
-						class={`group relative col-span-2 overflow-hidden rounded-3xl bg-gray-50 p-8 transition-all duration-300 hover:bg-${item.color}-50 hover:shadow-xl hover:shadow-${item.color}-500/10 dark:bg-zinc-900 dark:hover:bg-${item.color}-900/10`}
-					>
-						<div class="relative z-10 flex h-full flex-row justify-start gap-6">
-							<div
-								class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm ring-1 ring-black/5 transition-transform group-hover:scale-110 dark:bg-zinc-800 dark:ring-white/10"
-							>
-								<Icon />
-							</div>
-
-							<div class="flex flex-col">
-								<h3 class="font-heading text-xl font-bold text-gray-900 dark:text-white">
-									{item.title}
-								</h3>
-								<p class="mt-1 text-sm font-medium text-gray-500 dark:text-gray-400">
-									{item.subtitle}
-								</p>
-							</div>
-						</div>
-						<div
-							class={`absolute -right-4 -bottom-4 h-32 w-32 rounded-full bg-${item.color}-500/10 opacity-0 blur-3xl transition-opacity group-hover:opacity-100`}
-						></div>
-					</div>
-				{/each}
-
-				{#each tech_stack[0].supportStack as item}
-					{@const Icon = item.icon}
-					<div
-						class={`group flex flex-col items-center justify-center gap-4 rounded-3xl bg-gray-50 p-6 transition-all duration-300 hover:bg-${item.color}-50 hover:shadow-lg dark:bg-zinc-900 dark:hover:bg-${item.color}-900/10`}
-					>
-						<div
-							class="rounded-xl bg-white p-3 shadow-sm ring-1 ring-black/5 dark:bg-zinc-800 dark:ring-white/10"
-						>
-							<Icon />
-						</div>
-						<span class="font-heading font-semibold text-gray-700 dark:text-gray-300"
-							>{item.title}</span
-						>
-					</div>
-				{/each}
-			</div>
-		</div>
-	</section>
+	<TechStack />
 
 	<!-- blog -->
 	<section class="mt-32 mb-32 px-4">
