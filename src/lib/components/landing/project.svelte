@@ -19,7 +19,7 @@
 	];
 </script>
 
-<section class="w-full px-4 pt-20" id="project-section">
+<section class="w-full px-4 pt-20" id="projects">
 	<div class="container mx-auto max-w-5xl">
 		<!-- header -->
 		<div class="mb-20 flex flex-col justify-between gap-8 border-b border-zinc-200 pb-8 md:flex-row md:items-end dark:border-zinc-800">

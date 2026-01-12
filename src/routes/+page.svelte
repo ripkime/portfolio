@@ -1,10 +1,6 @@
 <script>
-	import Github from '$lib/components/icons/github.svelte';
-	import Instagram from '$lib/components/icons/instagram.svelte';
-	import Signature from '$lib/components/icons/signature.svelte';
-	import Telegram from '$lib/components/icons/telegram.svelte';
-	import Youtube from '$lib/components/icons/youtube.svelte';
 	import Blog from '$lib/components/landing/blog.svelte';
+	import Footer from '$lib/components/landing/footer.svelte';
 	import Hero from '$lib/components/landing/hero.svelte';
 	import Project from '$lib/components/landing/project.svelte';
 	import Resume from '$lib/components/landing/resume.svelte';
@@ -28,7 +24,8 @@
 	<Resume/>
 
 	<!-- footer -->
-	<footer
+	 <Footer/>
+	<!-- <footer
 		class="mt-32 border-t border-gray-200 bg-gray-50/30 py-12 backdrop-blur-sm dark:border-gray-800 dark:bg-zinc-900/30"
 	>
 		<div
@@ -116,5 +113,5 @@
 				</span>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 </div>
